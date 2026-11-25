@@ -1,13 +1,13 @@
 {
-  "email": "yogesh.dhole@spurqlabs.com",
-  "userName": "Rutuja Raut",
-  "projectName": "Yogesh",
+  "email": "sandeep.garud@spurqlabs.com",
+  "userName": "Sandeep Garud",
+  "projectName": "Demoblaze-21-SK",
   "tool": "Spur Validator",
-  "organizationName": "staging",
+  "organizationName": "BootCamp1",
   "designation": "SDET",
   "report": "PostExecution",
   "templateName": "Default Template",
-  "testExecutionAssignee": "Rutuja Raut",
-  "testCaseExecutedBy": "Rutuja Raut",
-  "userSecretKey": "REPLACE_ME"
+  "testExecutionAssignee": "Sandeep Garud",
+  "testCaseExecutedBy": "Sandeep Garud",
+  "userSecretKey": "62bfc6ddcfbdb6861b6dae3eeae22da8516a0bec6faebeaeb6c6f8bcccf0076e"
 }

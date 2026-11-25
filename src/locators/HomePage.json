@@ -1,14 +1,4 @@
 {
   "welcomeUser": "#nameofuser",
-  "contact": "a[data-target=\"#exampleModal\"]",
-  "modal_title_new_message": "#exampleModalLabel",
-  "modal_header_new_message": "text=New message\n\u00d7",
-  "input_label_contact_email": "text=Contact Email:",
-  "input_label_contact_name": "text=Contact Name:",
-  "input_label_message": "text=Message:",
-  "button_0": "text=\u00d7",
-  "button_close": "text=Close",
-  "button_send_message": "text=Send message",
-  "paragraph_the_nokia_lumia_1520_is_powere": "#article",
   "homepage": "text=New message\n          \n            \u00d7"
 }

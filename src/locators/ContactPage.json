@@ -1,0 +1,11 @@
+{
+  "contactNavLink": "a[data-target=\"#exampleModal\"]",
+  "contactModal": "#exampleModal",
+  "contactModalTitle": "#exampleModalLabel",
+  "contactEmailInput": "#recipient-email",
+  "contactNameInput": "#recipient-name",
+  "contactMessageInput": "#message-text",
+  "contactSendButton": "#exampleModal .modal-footer button.btn-primary",
+  "contactHeaderCloseButton": "#exampleModal .modal-header button.close",
+  "contactFooterCloseButton": "#exampleModal .modal-footer button.btn-secondary"
+}
