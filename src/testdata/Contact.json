@@ -1,0 +1,13 @@
+{
+  "scenarios": [
+    {
+      "scenarioName": "Automated - DMPP-TC-002: Verify visitor can send a message with all fields filled",
+      "testData": {
+        "contactEmailInput": "qa.tester@example.com",
+        "contactNameInput": "QA Tester",
+        "contactMessageInput": "Hello, I have a question about my order.",
+        "expectedAlert": "Thanks for the message!!"
+      }
+    }
+  ]
+}
