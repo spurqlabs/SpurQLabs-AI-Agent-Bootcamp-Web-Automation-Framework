@@ -1,0 +1,23 @@
+{
+  "scenarios": [
+    {
+      "scenarioName": "Automated - DMSR-TC-001: Verify visitor can send a complete contact message and see thank-you alert",
+      "testData": {
+        "contactModalTitleText": "New message",
+        "contactEmailInput": "test@example.com",
+        "contactNameInput": "John Tester",
+        "contactMessageInput": "Hello, I have a question about my order.",
+        "thankYouMessage": "Thanks for the message!!"
+      }
+    },
+    {
+      "scenarioName": "Automated - DMSR-TC-002: Verify contact dialog resets after a message is sent",
+      "testData": {
+        "contactEmailInput": "test@example.com",
+        "contactNameInput": "John Tester",
+        "contactMessageInput": "Reset check message",
+        "thankYouMessage": "Thanks for the message!!"
+      }
+    }
+  ]
+}
