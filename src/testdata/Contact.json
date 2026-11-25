@@ -1,0 +1,13 @@
+{
+  "scenarios": [
+    {
+      "scenarioName": "Automated - DMSK-TC-002: Verify visitor can send a contact message with valid details",
+      "testData": {
+        "contactEmailInput": "test@example.com",
+        "contactNameInput": "John Doe",
+        "contactMessageInput": "Hello, I have a question about your products.",
+        "contactSuccessAlert": "Thanks for the message!!"
+      }
+    }
+  ]
+}
