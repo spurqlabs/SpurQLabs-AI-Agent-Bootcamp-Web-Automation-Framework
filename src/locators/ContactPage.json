@@ -1,0 +1,12 @@
+{
+  "contactLink": "a[data-target=\"#exampleModal\"]",
+  "contactModal": "#exampleModal",
+  "contactModalTitle": "#exampleModalLabel",
+  "contactEmailInput": "#recipient-email",
+  "contactNameInput": "#recipient-name",
+  "contactMessageInput": "#message-text",
+  "contactSendButton": "#exampleModal button[onclick=\"send()\"]",
+  "contactCloseButton": "#exampleModal .modal-footer button[data-dismiss=\"modal\"]",
+  "contactCloseIcon": "#exampleModal .modal-header button.close",
+  "contactProductGrid": "#tbodyid"
+}
