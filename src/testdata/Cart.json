@@ -1,0 +1,13 @@
+{
+  "scenarios": [
+    {
+      "scenarioName": "Automated - DMSA-TC-002: Verify only Nexus 6 is listed after adding it from a fresh session",
+      "testData": {
+        "viewCartEndpoint": "/viewcart",
+        "expectedRowCount": 1,
+        "productAddedAlert": "Product added"
+      }
+    }
+  ]
+}
+
