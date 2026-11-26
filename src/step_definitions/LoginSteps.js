@@ -103,18 +103,22 @@ When('User clicks on {string} button', async function (buttonKey) {
 Then('User should see {string} element with username', async function (elementKey) {
   const page = this.scenarioContext.getPage();
   const locator = this.scenarioContext.getLocator(elementKey);
-  const expectedText = this.scenarioContext.getTestDataValue(elementKey);
 
   if (!locator) {
     throw new Error(`Locator not found for key: ${elementKey}`);
   }
+
+  // Expected text must come from test data (e.g. "Welcome test_userTG").
+  // getData() throws a clear error if the key is missing, instead of silently
+  // falling back to a hard-coded value that would also pass for the wrong user.
+  const expectedText = this.scenarioContext.getData(elementKey);
 
   // verifyVisible auto-retries via expect(locator).toBeVisible() — no try/catch needed
   await assertions.verifyVisible(page, locator);
   console.log(`✅ Element '${elementKey}' is visible`);
 
   // verifyText auto-retries via expect(locator).toContainText() — no manual getText() needed
-  await assertions.verifyText(page, locator, expectedText || 'Welcome');
+  await assertions.verifyText(page, locator, expectedText);
   console.log(`✅ Verified text contains: ${expectedText}`);
 });
 

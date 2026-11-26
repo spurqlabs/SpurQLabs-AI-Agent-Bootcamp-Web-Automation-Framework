@@ -142,7 +142,7 @@ class BasePage {
 
   /**
    * Wait for the page to reach a load state.
-   * Replaces arbitrary waitForTimeout after navigation or form submission.
+   * Use this instead of fixed sleeps after navigation or form submission.
    * @param {'load'|'domcontentloaded'|'networkidle'} [state='domcontentloaded']
    */
   async waitForPageLoad(state = 'domcontentloaded') {
