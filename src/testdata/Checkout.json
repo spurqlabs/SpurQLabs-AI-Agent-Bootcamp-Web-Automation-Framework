@@ -1,0 +1,20 @@
+{
+  "scenarios": [
+    {
+      "scenarioName": "Automated - DMTG-TC-001: Verify order with all fields filled shows a correct confirmation",
+      "testData": {
+        "expectedProductName": "MacBook Pro",
+        "expectedProductPrice": "1100",
+        "expectedCartTotal": "1100",
+        "addToCartMessage": "Product added",
+        "checkoutNameField": "John Doe",
+        "checkoutCountryField": "India",
+        "checkoutCityField": "Pune",
+        "checkoutCardField": "4111111111111111",
+        "checkoutMonthField": "12",
+        "checkoutYearField": "2030",
+        "confirmationTitle": "Thank you for your purchase!"
+      }
+    }
+  ]
+}

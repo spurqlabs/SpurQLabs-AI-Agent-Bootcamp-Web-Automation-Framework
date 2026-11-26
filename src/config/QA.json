@@ -1,6 +1,7 @@
 {
   "environment": "QA",
   "baseURL": "https://www.demoblaze.com",
+  "apiURL": "https://api.demoblaze.com",
   "timeout": 30000,
   "shortTimeout": 5000,
   "stepTimeout": 60000,

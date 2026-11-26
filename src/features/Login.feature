@@ -7,8 +7,9 @@ Feature: Login Functionality
   Background:
     Given User navigates to Demoblaze application
 
-  @Smoke @ValidLogin @AIPL-TC-055
+  @Smoke @ValidLogin @DMTG-TC-004
   Scenario: Successful login with valid credentials
+    Given a registered account exists for the test user
     When User clicks on "loginMenu" link
     And User enters "username" field value
     And User enters "password" field value

@@ -16,6 +16,16 @@ Given('User navigates to Demoblaze application', async function () {
   await page.waitForLoadState('domcontentloaded');
 });
 
+// Set up the scenario's test account through the API so the test does not depend
+// on an account surviving on the shared demo backend. Credentials come from test data.
+Given('a registered account exists for the test user', async function () {
+  const loginPage = this.scenarioContext.getPageObject('loginPage');
+  await loginPage.ensureUserExists(
+    this.scenarioContext.getData('username'),
+    this.scenarioContext.getData('password')
+  );
+});
+
 // Generic step to click on any link using key from feature file
 When('User clicks on {string} link', async function (elementKey) {
   const page = this.scenarioContext.getPage();
@@ -68,7 +78,10 @@ When('User clicks on {string} button', async function (buttonKey) {
   }
 
   // Capture any alert/dialog that the click may trigger.
+  // Clear the previous message first so an alert assertion can never pass on a
+  // stale message from an earlier click in the same scenario.
   // The listener MUST be registered before the click so no event is missed.
+  this.scenarioContext.removeContextData('lastDialogMessage');
   page.once('dialog', async (dialog) => {
     const message = dialog.message();
     this.scenarioContext.setContextData('lastDialogMessage', message);

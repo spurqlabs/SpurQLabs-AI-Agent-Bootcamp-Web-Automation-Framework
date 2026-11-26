@@ -3,9 +3,9 @@
     {
       "scenarioName": "Successful login with valid credentials",
       "testData": {
-        "username": "test_userRR",
+        "username": "test_userTG",
         "password": "test123",
-        "welcomeUser": "Welcome test_userRR"
+        "welcomeUser": "Welcome test_userTG"
       }
     },
     {
